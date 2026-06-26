@@ -28,11 +28,11 @@ const ProductsPage = () => {
       {/* Page Header */}
       <section className="bg-[#0e0906] text-white py-16 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-        <div className="relative max-w-xl mx-auto z-10">
-          <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-4">
-            The <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Entire Collection</span>
+        <div className="relative max-w-4xl mx-auto z-10">
+          <h1 className="heroTitle mb-4" style={{ color: "white" }}>
+            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Entire Collection</span>
           </h1>
-          <p className="text-gray-300 text-sm md:text-base font-light">
+          <p className="text-gray-300 text-sm md:text-base font-light max-w-xl mx-auto whitespace-normal">
             Explore our complete collection of shirts, t-shirts, and pants engineered for fit, durability, and character.
           </p>
         </div>
@@ -43,7 +43,7 @@ const ProductsPage = () => {
         
         {/* Section Heading */}
         <div className="flex items-center justify-between mb-10 border-b border-gray-100 pb-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
+          <h2 className="sectionTitle !mb-0" style={{ marginBottom: "0px" }}>
             Latest Arrivals
           </h2>
           <span className="text-sm text-gray-500 font-medium">

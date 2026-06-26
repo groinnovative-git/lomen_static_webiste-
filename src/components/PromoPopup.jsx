@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './PromoPopup.css';
-import heroImg from '../assets/images/shop3.jpeg';
+import shop3 from '../assets/images/shop3.jpeg';
+import shop4 from '../assets/images/shop4.jpeg';
+import shop5 from '../assets/images/shop5.jpeg';
+import shop6 from '../assets/images/shop6.jpeg';
+
+const promoImages = [shop3, shop4, shop5, shop6];
 
 const PromoPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dontShowAgain, setDontShowAgain] = useState(false);
+  const [currentImage, setCurrentImage] = useState(promoImages[0]);
 
   useEffect(() => {
+    setCurrentImage(promoImages[Math.floor(Math.random() * promoImages.length)]);
     const hasOptedOut = localStorage.getItem('promoPopupOptOut');
     if (hasOptedOut) {
       return;
@@ -30,6 +37,7 @@ const PromoPopup = () => {
       setTimeout(() => {
         const hasOptedOut = localStorage.getItem('promoPopupOptOut');
         if (!hasOptedOut) {
+           setCurrentImage(promoImages[Math.floor(Math.random() * promoImages.length)]);
            setIsOpen(true);
         }
       }, 3 * 60 * 1000);
@@ -51,7 +59,7 @@ const PromoPopup = () => {
         </button>
         <div className="promoPopupContent">
           <div className="promoPopupLeft">
-            <img src={heroImg} alt="Promo Collection" />
+            <img src={currentImage} alt="Promo Collection" />
           </div>
           <div className="promoPopupRight">
             <p className="promoPopupSubtitle">Exclusive styles for the modern man</p>

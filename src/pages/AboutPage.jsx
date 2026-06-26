@@ -160,7 +160,7 @@ const AboutPage = () => {
 
           <div className="order-1 lg:order-2">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-4 block">Our Story</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0e0906] mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h2 className="sectionTitle mb-6 leading-tight text-left">
               We Started With a Simple Idea
             </h2>
             <p className="text-gray-500 leading-relaxed mb-5">
@@ -189,7 +189,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-3 block">Collections</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0e0906]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h2 className="sectionTitle">
               Style Made for Every Moment
             </h2>
           </div>
@@ -217,7 +217,7 @@ const AboutPage = () => {
       <section className="py-20 bg-[#0e0906] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12 mb-10 text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400 mb-3 block">Our Store</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <h2 className="sectionTitle" style={{ color: "white" }}>
             Inside LoMen Fashion Club
           </h2>
           <p className="text-gray-400 mt-3 text-sm max-w-md mx-auto">
@@ -242,7 +242,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-3 block">What Drives Us</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0e0906]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h2 className="sectionTitle">
               Mission & Vision
             </h2>
           </div>
@@ -292,7 +292,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-3 block">Why LoMen</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0e0906]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h2 className="sectionTitle">
               Why Young Men Choose LoMen
             </h2>
           </div>
@@ -323,7 +323,7 @@ const AboutPage = () => {
             <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full w-fit mb-6">
               <ShoppingBag size={12} /> Now Available Online
             </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
+            <h2 className="sectionTitle leading-tight mb-6" style={{ color: "white" }}>
               Shop LoMen{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
                 Anytime, Anywhere
@@ -363,7 +363,7 @@ const AboutPage = () => {
       <section className="py-24 px-6 text-center bg-white">
         <div className="max-w-3xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-4 block">Get Started</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0e0906] mb-6 leading-tight" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <h2 className="sectionTitle mb-6 leading-tight">
             Ready to Upgrade Your Wardrobe?
           </h2>
           <p className="text-gray-500 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
