@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --border-radius: 8px;
+  --font-color-primary: "#0e0906";
+  --font-color-secondary: "#f5f5e9";
+  --bg-color-primary: "#0e0906";
+  --bg-color-secondary: "#f5f5e9";
+  --border-color: "#ccc";
+  --primary-button-border-color: "#0e0906";
+  --secondary-button-border-color: "#f5f5e9";
+  --button-padding: 7.5px 15px;
+  --primary-header-size: "22px";
+  --secondary-header-size: "20px";
+  --ternary-header-size: "18px";
+  --hero-header-size: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: var(--font-family);
+}
+button {
+  padding: var(--button-padding);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

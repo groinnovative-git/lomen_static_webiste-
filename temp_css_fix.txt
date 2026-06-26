@@ -1,0 +1,28 @@
+}
+
+/* ------------------------------------------------------------------------------
+   HOMEPAGE — Customer Review Section
+   ------------------------------------------------------------------------------ */
+
+.googleReviewSection {
+  padding: 40px 20px 20px;
+  background-color: #faf9f7;
+  overflow: hidden;
+}
+
+.googleReviewSectionInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.googleReviewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  margin-bottom: 30px;
+}

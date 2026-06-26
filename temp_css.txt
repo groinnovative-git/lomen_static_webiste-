@@ -1,0 +1,113 @@
+/* Card */
+.googleReviewCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 350px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid #f1f3f4;
+  flex-shrink: 0;
+}
+
+.googleReviewTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.googleReviewAvatarWrapper {
+  position: relative;
+}
+
+.googleReviewAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0e0906;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.googleReviewBadge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.googleReviewMeta {
+  flex: 1;
+}
+
+.googleReviewNameRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.googleReviewName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.googleReviewVerified {
+  flex-shrink: 0;
+}
+
+.googleReviewTime {
+  font-size: 12px;
+  color: #5f6368;
+}
+
+.googleReviewStars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.googleReviewText {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3c4043;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.googleReviewReadMore {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.googleReviewReadMore:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .googleReviewHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+}
