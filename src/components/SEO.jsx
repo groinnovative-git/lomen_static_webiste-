@@ -18,8 +18,10 @@ const SEO = ({
 }) => {
   const pageTitle = title || DEFAULT_TITLE;
   const pageDesc = description || DEFAULT_DESC;
-  const pageCanonical = canonical ? `${SITE_URL}${canonical}` : SITE_URL + '/';
+  const pageCanonical = canonical ? `${SITE_URL}${canonical}` : `${SITE_URL}/`;
   const pageOgImage = ogImage || DEFAULT_OG_IMAGE;
+
+  const schemas = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
 
   return (
     <Helmet>
@@ -29,6 +31,12 @@ const SEO = ({
       <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
       <link rel="canonical" href={pageCanonical} />
 
+      {/* Geo / Local SEO */}
+      <meta name="geo.region" content="IN-TN" />
+      <meta name="geo.placename" content="Coimbatore" />
+      <meta name="geo.position" content="11.026446;76.941166" />
+      <meta name="ICBM" content="11.026446, 76.941166" />
+
       {/* Open Graph */}
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDesc} />
@@ -37,6 +45,8 @@ const SEO = ({
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:image" content={pageOgImage} />
       <meta property="og:image:alt" content={`${SITE_NAME} - Premium Men's Fashion`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_IN" />
 
       {/* Twitter Card */}
@@ -46,12 +56,12 @@ const SEO = ({
       <meta name="twitter:image" content={pageOgImage} />
       <meta name="twitter:image:alt" content={`${SITE_NAME} - Premium Men's Fashion`} />
 
-      {/* Inline JSON-LD */}
-      {jsonLd && (
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
+      {/* JSON-LD: one <script> block per schema */}
+      {schemas.map((schema, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(schema)}
         </script>
-      )}
+      ))}
     </Helmet>
   );
 };

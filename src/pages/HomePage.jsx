@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../components/Hero'
 import CategorySection from '../components/CategorySection'
 import BannerSection from '../components/BannerSection'
@@ -7,6 +6,7 @@ import TrustedSection from '../components/TrustedSection'
 import CustomerReviewSection from '../components/CustomerReviewSection'
 import InstagramSection from '../components/InstagramSection'
 import FAQSection from '../components/FAQSection'
+import BrandIntroSection from '../components/BrandIntroSection'
 
 const HomePage = () => {
   return (
@@ -18,6 +18,7 @@ const HomePage = () => {
       <CategorySection />
       <BannerSection />
       <TrendingSection />
+      <BrandIntroSection />
       <TrustedSection />
       <CustomerReviewSection />
       <FAQSection />

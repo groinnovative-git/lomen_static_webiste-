@@ -1,27 +1,17 @@
-import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { collectionProducts } from "../data/collectionProducts";
-import { Heart, ShoppingCart, Eye, Check } from "lucide-react";
+import { Heart, ShoppingCart, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CollectionPage = () => {
-  const { addToCart, toggleWishlist, isInWishlist } = useCart();
-  const [addedProductId, setAddedProductId] = useState(null);
-
-  const handleAddToCart = (product) => {
-    addToCart(product);
-    setAddedProductId(product.id);
-    setTimeout(() => {
-      setAddedProductId(null);
-    }, 2000);
-  };
+  const { toggleWishlist, isInWishlist } = useCart();
 
   return (
     <div className="collectionPage">
       {/* 1. Hero / Page Banner Section */}
       <section className="collectionHero">
         <div className="collectionHeroInner">
-          <h1 className="collectionHeroTitle">Collection</h1>
+          <h1 className="collectionHeroTitle">Men's Fashion Collection</h1>
           <nav className="collectionBreadcrumb">
             <Link to="/">Home</Link>
             <span className="separator">/</span>

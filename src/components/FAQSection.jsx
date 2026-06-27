@@ -24,6 +24,21 @@ const faqs = [
       "Yes, LoMen Fashion Club offers a customisation service where you can design your own fit — choose your fabric, collar style, cuff, and cut for a truly personalised menswear experience.",
   },
   {
+    question: "Where is LoMen Fashion Club located?",
+    answer:
+      "LoMen Fashion Club is located at 74, Collector Sivakumar St, Saibaba Colony, Coimbatore, Tamil Nadu 641038, India. You can also shop online through our store available on the website.",
+  },
+  {
+    question: "Does LoMen Fashion Club deliver across India?",
+    answer:
+      "Yes, LoMen Fashion Club delivers men's fashion products across India. Orders are typically delivered within 3 to 5 business days. Fast delivery and easy returns are part of our service promise.",
+  },
+  {
+    question: "What is the return policy at LoMen Fashion Club?",
+    answer:
+      "LoMen Fashion Club offers hassle-free returns within 7 days of delivery. If you are not satisfied with your purchase, you can contact our support team at lomenfashionclub@gmail.com or call +91 93609 59528.",
+  },
+  {
     question: "How can customers contact LoMen Fashion Club?",
     answer:
       "Customers can reach LoMen Fashion Club by email at lomenfashionclub@gmail.com, by phone at +91 93609 59528, or by visiting the store at 74, Collector Sivakumar St, Saibaba Colony, Coimbatore, Tamil Nadu 641038.",

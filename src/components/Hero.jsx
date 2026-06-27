@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
 import image1 from "../assets/images/image1.jpeg";
 import image2 from "../assets/images/image2.jpeg";
 import image3 from "../assets/images/image3.jpeg";
@@ -37,7 +36,7 @@ const Hero = () => {
           <h1 className="heroTitle">Redefine Your Style</h1>
 
           <p className="heroDescription">
-            Discover premium menswear crafted for the modern gentleman.
+            Discover premium menswear from <strong>LoMen Fashion Club</strong>, crafted for the modern gentleman.
           </p>
 
           <div className="heroActions">

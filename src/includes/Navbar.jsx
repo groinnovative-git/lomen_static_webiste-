@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo1 from "../assets/images/logo1.jpeg";
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navNavbar">
           <div className="navLeft">
             <Link to="/" className="navLogoContainer">
-              <img src={logo1} alt="LoMen Logo" />
+              <img src={logo1} alt="LoMen Fashion Club Logo" />
             </Link>
             <div className="navCenterText">
               <span>Lomen Fashion Club</span>
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className={`mobileMenu ${isMenuOpen ? "open" : ""}`}>
           <div className="mobileMenuHeader">
             <Link to="/" onClick={toggleMenu} className="navLogoContainer">
-              <img src={logo1} alt="LoMen Logo" />
+              <img src={logo1} alt="LoMen Fashion Club Logo" />
             </Link>
             <button className="closeButton" onClick={toggleMenu}>
               <X size={24} />
