@@ -60,8 +60,8 @@ const ContactPage = () => {
             <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-5 transition duration-300">
               <Phone className="text-amber-500" size={28} strokeWidth={1.5} />
             </div>
-            <p className="text-gray-800 text-[15px] mb-1.5 font-medium">+91 98765-43210</p>
-            <p className="text-gray-500 text-[14px]">+91 99887-65432</p>
+            <p className="text-gray-800 text-[15px] mb-1.5 font-medium">Phone</p>
+            <p className="text-gray-500 text-[14px]">+91 93609 59528</p>
           </div>
 
           {/* Card 3: Email */}
@@ -69,8 +69,8 @@ const ContactPage = () => {
             <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mb-5 transition duration-300">
               <Mail className="text-amber-500" size={28} strokeWidth={1.5} />
             </div>
-            <p className="text-gray-800 text-[15px] mb-1.5 font-medium">info@lomen.com</p>
-            <p className="text-gray-500 text-[14px]">support@lomen.com</p>
+            <p className="text-gray-800 text-[15px] mb-1.5 font-medium">Email</p>
+            <p className="text-gray-500 text-[14px]">lomenfashionclub@gmail.com</p>
           </div>
 
           {/* Card 4: Store */}

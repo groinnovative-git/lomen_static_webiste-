@@ -138,7 +138,7 @@ const AboutPage = () => {
         </div>
 
         <div className="flex-1 relative min-h-[400px] lg:min-h-full">
-          <img src={image1} alt="LoMen Fashion" className="w-full h-full object-cover object-center" />
+          <img src={image1} alt="LoMen Fashion Club - Modern Men's Clothing" className="w-full h-full object-cover object-center" />
           <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-xl">
             <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Our Promise</p>
             <p className="text-sm font-bold text-[#0e0906]">Style. Comfort. Confidence.</p>
@@ -151,7 +151,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative order-2 lg:order-1">
             <div className="absolute -inset-3 bg-gradient-to-tr from-amber-100 to-amber-50 rounded-3xl -z-10"></div>
-            <img src={image2} alt="LoMen Store" className="w-full h-[480px] object-cover rounded-2xl shadow-lg" />
+            <img src={image2} alt="LoMen Fashion Club Store - Premium Menswear" className="w-full h-[480px] object-cover rounded-2xl shadow-lg" />
             <div className="absolute -bottom-6 -right-6 bg-[#0e0906] text-white rounded-2xl px-6 py-4 shadow-xl hidden md:block">
               <p className="text-3xl font-bold text-amber-400">10k+</p>
               <p className="text-xs text-gray-300 mt-1">Young Men Styled</p>
@@ -230,7 +230,17 @@ const AboutPage = () => {
           <div className="aboutShopTrack">
             {[...shopImages, ...shopImages].map((src, i) => (
               <div key={i} className="aboutShopCard">
-                <img src={src} alt={`Shop ${(i % 6) + 1}`} />
+                <img
+                  src={src}
+                  alt={[
+                    "LoMen Fashion Club store interior",
+                    "Men's clothing display at LoMen",
+                    "LoMen Fashion Club premium menswear",
+                    "Men's fashion collection at LoMen store",
+                    "LoMen stylish outfits for men",
+                    "LoMen Fashion Club Coimbatore store",
+                  ][i % 6]}
+                />
               </div>
             ))}
           </div>

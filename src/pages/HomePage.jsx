@@ -6,6 +6,7 @@ import TrendingSection from '../components/TrendingSection'
 import TrustedSection from '../components/TrustedSection'
 import CustomerReviewSection from '../components/CustomerReviewSection'
 import InstagramSection from '../components/InstagramSection'
+import FAQSection from '../components/FAQSection'
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <TrendingSection />
       <TrustedSection />
       <CustomerReviewSection />
+      <FAQSection />
       <InstagramSection />
     </div>
   )

@@ -8,11 +8,11 @@ import image4 from "../assets/images/image4.jpeg";
 import image5 from "../assets/images/image5.jpeg";
 
 const images = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
+  { src: image1, alt: "LoMen Fashion Club - Premium Men's Clothing Collection" },
+  { src: image2, alt: "Stylish Menswear from LoMen Fashion Club" },
+  { src: image3, alt: "Modern Men's Outfits - LoMen Fashion Club" },
+  { src: image4, alt: "Trending Men's Fashion - LoMen Style Collection" },
+  { src: image5, alt: "Casual & Smart Men's Wear by LoMen Fashion Club" },
 ];
 
 const Hero = () => {
@@ -49,11 +49,11 @@ const Hero = () => {
         </div>
 
         <div className="heroRight">
-          {images.map((src, index) => (
+          {images.map((img, index) => (
             <img
               key={index}
-              src={src}
-              alt={`Hero ${index + 1}`}
+              src={img.src}
+              alt={img.alt}
               className={`heroImage heroSlide ${index === current ? "heroSlideActive" : ""}`}
             />
           ))}

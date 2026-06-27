@@ -4544,3 +4544,332 @@ button:hover {
         overflow-x: hidden;
     }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   TRUSTED SECTION — Redesigned (connected icon-line layout)
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Override the old card-based grid */
+.homeTrustedSection {
+    padding: 90px 50px;
+    background: linear-gradient(135deg, #0e0906 0%, #1a1512 50%, #2d2926 100%);
+    color: #fff;
+    overflow: hidden;
+}
+
+.homeTrustedSectionInner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homeTrustedHeader {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.homeTrustedTitle {
+    font-size: 62px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 18px;
+}
+
+.homeTrustedSubtitle {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Connected stats row */
+.homeTrustedStatsRow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Horizontal line through icon centers */
+.homeTrustedStatsRow::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 1px;
+    background: rgba(200, 135, 50, 0.3);
+    z-index: 0;
+}
+
+.homeTrustedStat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.homeTrustedIconCircle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(200, 135, 50, 0.15);
+    border: 1.5px solid rgba(200, 135, 50, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c88732;
+    position: relative;
+    z-index: 2;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.homeTrustedStat:hover .homeTrustedIconCircle {
+    background: rgba(200, 135, 50, 0.28);
+    transform: translateY(-4px);
+}
+
+.homeTrustedValue {
+    font-size: 46px;
+    font-weight: 700;
+    color: #c88732;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+}
+
+.homeTrustedLabel {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .homeTrustedTitle {
+        font-size: 50px;
+    }
+
+    .homeTrustedValue {
+        font-size: 38px;
+    }
+
+    .homeTrustedIconCircle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .homeTrustedStatsRow::before {
+        top: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .homeTrustedSection {
+        padding: 70px 30px;
+    }
+
+    .homeTrustedTitle {
+        font-size: 36px;
+        letter-spacing: -0.5px;
+    }
+
+    .homeTrustedHeader {
+        margin-bottom: 50px;
+    }
+
+    /* Hide line, wrap to 2×2 grid */
+    .homeTrustedStatsRow {
+        flex-wrap: wrap;
+        gap: 44px 20px;
+    }
+
+    .homeTrustedStatsRow::before {
+        display: none;
+    }
+
+    .homeTrustedStat {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .homeTrustedIconCircle {
+        width: 68px;
+        height: 68px;
+    }
+
+    .homeTrustedValue {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeTrustedSection {
+        padding: 50px 20px;
+    }
+
+    .homeTrustedTitle {
+        font-size: 28px;
+        letter-spacing: 0;
+    }
+
+    .homeTrustedSubtitle {
+        font-size: 14px;
+    }
+
+    .homeTrustedHeader {
+        margin-bottom: 40px;
+    }
+
+    .homeTrustedStat {
+        flex: 0 0 calc(50% - 8px);
+        gap: 12px;
+    }
+
+    .homeTrustedStatsRow {
+        gap: 36px 16px;
+    }
+
+    .homeTrustedIconCircle {
+        width: 58px;
+        height: 58px;
+    }
+
+    .homeTrustedValue {
+        font-size: 28px;
+    }
+
+    .homeTrustedLabel {
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media (max-width: 375px) {
+    .homeTrustedSection {
+        padding: 40px 14px;
+    }
+
+    .homeTrustedTitle {
+        font-size: 24px;
+    }
+
+    .homeTrustedStat {
+        flex: 0 0 calc(50% - 6px);
+        gap: 10px;
+    }
+
+    .homeTrustedStatsRow {
+        gap: 28px 12px;
+    }
+
+    .homeTrustedIconCircle {
+        width: 52px;
+        height: 52px;
+    }
+
+    .homeTrustedValue {
+        font-size: 24px;
+    }
+
+    .homeTrustedLabel {
+        font-size: 9px;
+    }
+}
+
+/* ── FAQ Section ──────────────────────────────────────────────────────────── */
+
+.homeFaqSection {
+    background-color: #faf9f7;
+    padding: 80px 20px;
+}
+
+.homeFaqSectionInner {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.homeFaqList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 48px;
+}
+
+.homeFaqItem {
+    background: #fff;
+    border: 1px solid #e9e8e8;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.homeFaqItem:hover {
+    box-shadow: 0 4px 18px rgba(14, 9, 6, 0.07);
+}
+
+.homeFaqQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    background: transparent;
+    color: var(--font-color-primary);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.homeFaqQuestion:hover {
+    background: #f5f4f2;
+}
+
+.homeFaqChevron {
+    flex-shrink: 0;
+    color: #b08020;
+    transition: transform 0.25s ease;
+}
+
+.homeFaqChevronOpen {
+    transform: rotate(180deg);
+}
+
+.homeFaqAnswer {
+    padding: 0 24px 20px;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.75;
+    border-top: 1px solid #f0eeeb;
+}
+
+@media (max-width: 640px) {
+    .homeFaqSection {
+        padding: 60px 16px;
+    }
+
+    .homeFaqQuestion {
+        font-size: 14px;
+        padding: 16px 18px;
+    }
+
+    .homeFaqAnswer {
+        padding: 0 18px 16px;
+        font-size: 13px;
+    }
+}

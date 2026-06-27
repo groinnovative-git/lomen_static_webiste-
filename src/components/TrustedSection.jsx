@@ -5,26 +5,26 @@ const stats = [
   {
     id: 1,
     icon: Users,
-    value: "6.3k+",
+    value: "4.1K+",
     label: "Happy Customers",
   },
   {
     id: 2,
     icon: Star,
-    value: "1.2k+",
+    value: "779+",
     label: "Customer Reviews",
   },
   {
     id: 3,
     icon: Package,
-    value: "250+",
+    value: "162+",
     label: "New Arrivals",
   },
   {
     id: 4,
     icon: Headphones,
     value: "24/7",
-    label: "Support",
+    label: "Customer Support",
   },
 ];
 
@@ -32,22 +32,23 @@ const TrustedSection = () => {
   return (
     <section className="homeTrustedSection">
       <div className="homeTrustedSectionInner">
+
         <div className="homeTrustedHeader">
           <h2 className="homeTrustedTitle">
-            Trusted by 6.3k+ Happy Customers
+            Trusted by 6.3K+ Happy Customers
           </h2>
           <p className="homeTrustedSubtitle">
-            A growing fashion destination for premium men's wear.
+            Delivering premium menswear with exceptional quality and customer satisfaction.
           </p>
         </div>
 
-        <div className="homeTrustedGrid">
+        <div className="homeTrustedStatsRow">
           {stats.map((stat) => {
             const IconComponent = stat.icon;
             return (
-              <div key={stat.id} className="homeTrustedCard">
-                <div className="homeTrustedIconWrapper">
-                  <IconComponent size={28} strokeWidth={1.5} />
+              <div key={stat.id} className="homeTrustedStat">
+                <div className="homeTrustedIconCircle">
+                  <IconComponent size={30} strokeWidth={1.5} />
                 </div>
                 <h3 className="homeTrustedValue">{stat.value}</h3>
                 <p className="homeTrustedLabel">{stat.label}</p>
@@ -55,6 +56,7 @@ const TrustedSection = () => {
             );
           })}
         </div>
+
       </div>
     </section>
   );

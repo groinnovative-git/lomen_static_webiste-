@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://lomenfclub.in/</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Collection Page -->
+  <url>
+    <loc>https://lomenfclub.in/collection</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- All Products -->
+  <url>
+    <loc>https://lomenfclub.in/product</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Shirts Category -->
+  <url>
+    <loc>https://lomenfclub.in/shirt</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- T-Shirts Category -->
+  <url>
+    <loc>https://lomenfclub.in/tshirt</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pants Category -->
+  <url>
+    <loc>https://lomenfclub.in/pant</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Custom Wear -->
+  <url>
+    <loc>https://lomenfclub.in/customize</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://lomenfclub.in/about</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://lomenfclub.in/contact</loc>
+    <lastmod>2025-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

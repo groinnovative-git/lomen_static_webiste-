@@ -8,12 +8,12 @@ const BannerSection = () => {
       <div className="homeBannerTrack">
         {/* We duplicate the content to create a seamless infinite loop */}
         <div className="homeBannerGroup">
-          <img src={banner1} alt="Promotional Banner 1" className="homeBannerImage" />
-          <img src={banner2} alt="Promotional Banner 2" className="homeBannerImage" />
+          <img src={banner1} alt="LoMen Fashion Club - Men's Collection Promotional Banner" className="homeBannerImage" />
+          <img src={banner2} alt="LoMen Fashion Club - New Arrivals Men's Fashion Banner" className="homeBannerImage" />
         </div>
         <div className="homeBannerGroup" aria-hidden="true">
-          <img src={banner1} alt="Promotional Banner 1" className="homeBannerImage" />
-          <img src={banner2} alt="Promotional Banner 2" className="homeBannerImage" />
+          <img src={banner1} alt="" className="homeBannerImage" />
+          <img src={banner2} alt="" className="homeBannerImage" />
         </div>
       </div>
     </section>
