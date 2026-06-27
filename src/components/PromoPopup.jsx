@@ -19,10 +19,10 @@ const PromoPopup = () => {
       return;
     }
 
-    // Show popup after 5 seconds on initial load
+    // Show popup after 30 seconds on initial load
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 5000);
+    }, 30000);
 
     return () => clearTimeout(timer);
   }, []);
