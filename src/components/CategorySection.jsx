@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import shortsImg from "../assets/images/MEN shots.jpeg";
+import formalsImg from "../assets/images/stylish-young-handsome-man-classy-outfit.jpg.jpeg";
 
 const categories = [
   {
@@ -39,15 +41,15 @@ const categories = [
   {
     id: 6,
     name: "Shorts",
-    image: "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=80",
+    image: shortsImg,
     alt: "Men's Shorts & Casual Bottoms at LoMen Fashion Club",
     link: "/product",
   },
   {
     id: 7,
-    name: "Blazers",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80",
-    alt: "Men's Blazers & Formal Wear at LoMen Fashion Club",
+    name: "Formals",
+    image: formalsImg,
+    alt: "Men's Formals & Office Wear at LoMen Fashion Club",
     link: "/product",
   },
   {

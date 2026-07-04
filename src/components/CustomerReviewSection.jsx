@@ -90,7 +90,7 @@ const CustomerReviewSection = () => {
           </div>
           <div className="googleReviewHeaderRight">
             <a 
-              href="#"
+              href="https://g.page/r/CUnYH6OQsNxOEAE/review"
               className="googleReviewBtn"
               target="_blank"
               rel="noopener noreferrer"

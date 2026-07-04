@@ -3792,6 +3792,7 @@ button:hover {
     height: 400px;
     border-radius: 16px;
     object-fit: cover;
+    padding: 20px;
 }
 
 @keyframes scrollBanner {

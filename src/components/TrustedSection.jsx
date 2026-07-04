@@ -34,7 +34,7 @@ const TrustedSection = () => {
       <div className="homeTrustedSectionInner">
 
         <div className="homeTrustedHeader">
-          <h2 className="homeTrustedTitle">
+          <h2 className="heroTitle" style={{ color: "white" }}>
             Trusted by 6.3K+ Happy Customers
           </h2>
           <p className="homeTrustedSubtitle">
